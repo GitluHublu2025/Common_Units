@@ -71,12 +71,12 @@ conversion_map = {
 }
 conversion_map.update({
     # --- D ---
-    "Degrees Fahrenheit": {
-        "Degrees Celsius": 0.5556  # ⚠️ offset not included, per PDF table
-    },
-    "Degrees Kelvin": {
-        "Degrees Celsius": 1.0  # ⚠️ offset not included, per PDF table
-    },
+   #  "Degrees Fahrenheit": {
+    #     "Degrees Celsius": 0.5556  # ⚠️ offset not included, per PDF table
+   #  },
+ #    "Degrees Kelvin": {
+   #      "Degrees Celsius": 1.0  # ⚠️ offset not included, per PDF table
+  #   },
     "Dynes": {
         "Newtons": 1.0E-5,
         "Pounds force": 2.248E-6
@@ -308,3 +308,4 @@ conversion_map.update({
         "Joules": 3600.0
     },
 })
+
