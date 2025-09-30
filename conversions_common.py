@@ -1,14 +1,26 @@
-# Auto-generated conversion mapping from 'Common Units.pdf' (exact text keys)
+# Auto-generated from Common Units_Export.csv
+# Exact units and conversion factors, grouped by "from" unit.
+
 conversion_map = {
     "Acres": {
         "Square feet": 43560.0,
         "Square meters": 4047.0,
         "Square miles": 0.001563
     },
+    "Acre-feet": {
+        "Cubic meters": 1233.0,
+        "Gallons (U.S. liquid)": 325851.0,
+        "Cubic feet": 43560.0
+    },
     "Angstrom units": {
         "Inches": 3.937E-9,
         "Meters": 1.0E-10,
         "Microns": 1.0E-4
+    },
+    "Atmospheres": {
+        "Pascals": 101325.0,
+        "Bars": 1.013,
+        "Pounds per square inch": 14.7
     },
     "B.t.u.": {
         "Calories": 251.996,
@@ -21,7 +33,7 @@ conversion_map = {
     },
     "Board feet": {
         "Cubic feet": 0.0833,
-        "Cubic meters": 2.36E-3
+        "Cubic meters": 0.00236
     },
     "British thermal units (B.t.u.)": {
         "Foot-pounds force": 778.26,
@@ -31,7 +43,7 @@ conversion_map = {
     "Calories": {
         "B.t.u.": 0.00397,
         "Joules": 4.1868,
-        "Watt-hours": 1.163E-3
+        "Watt-hours": 0.001163
     },
     "Candlepower": {
         "Lumens": 12.57
@@ -48,20 +60,29 @@ conversion_map = {
     },
     "Cubic inches": {
         "Cubic centimeters": 16.387,
-        "Liters": 1.639E-2,
-        "Cubic feet": 5.787E-4
+        "Liters": 0.01639,
+        "Cubic feet": 0.0005787
     },
     "Cubic meters": {
         "Cubic feet": 35.315,
         "Liters": 1000.0,
         "Cubic inches": 61023.7
     },
+}
+conversion_map.update({
+    # --- D ---
     "Degrees Fahrenheit": {
-        "Degrees Celsius": 0.5556  # ⚠️ actually needs offset, but kept as in PDF
+        "Degrees Celsius": 0.5556  # ⚠️ offset not included, per PDF table
     },
     "Degrees Kelvin": {
-        "Degrees Celsius": 1.0  # offset needed in reality, kept as in PDF
+        "Degrees Celsius": 1.0  # ⚠️ offset not included, per PDF table
     },
+    "Dynes": {
+        "Newtons": 1.0E-5,
+        "Pounds force": 2.248E-6
+    },
+
+    # --- F ---
     "Feet": {
         "Inches": 12.0,
         "Meters": 0.3048,
@@ -73,16 +94,25 @@ conversion_map = {
         "Ergs": 1.356E7,
         "Calories": 0.324
     },
+
+    # --- G ---
     "Gallons (U.S. liquid)": {
         "Cubic inches": 231.0,
         "Cubic feet": 0.1337,
         "Liters": 3.785
     },
     "Grams": {
-        "Pounds (avoirdupois)": 2.205E-3,
+        "Pounds (avoirdupois)": 0.002205,
         "Ounces (avoirdupois)": 0.03527,
-        "Kilograms": 1.0E-3
+        "Kilograms": 0.001
     },
+    "Grains": {
+        "Grams": 0.0648,
+        "Pounds (avoirdupois)": 0.0001429,
+        "Ounces (avoirdupois)": 0.002285
+    },
+
+    # --- H ---
     "Hectares": {
         "Acres": 2.471,
         "Square meters": 10000.0,
@@ -93,16 +123,23 @@ conversion_map = {
         "B.t.u. per minute": 42.41,
         "Foot-pounds force per second": 550.0
     },
+})
+conversion_map.update({
+    # --- I ---
     "Inches": {
         "Centimeters": 2.54,
         "Feet": 0.08333,
         "Meters": 0.0254
     },
+
+    # --- J ---
     "Joules": {
         "Ergs": 1.0E7,
         "Calories": 0.2390,
-        "Watt-hours": 2.778E-4
+        "Watt-hours": 0.0002778
     },
+
+    # --- K ---
     "Kilocalories": {
         "B.t.u.": 3.968,
         "Joules": 4186.0,
@@ -123,6 +160,8 @@ conversion_map = {
         "Calories": 859.8,
         "Joules": 3.6E6
     },
+
+    # --- L ---
     "Liters": {
         "Gallons (U.S. liquid)": 0.2642,
         "Cubic feet": 0.0353,
@@ -131,6 +170,8 @@ conversion_map = {
     "Lumens": {
         "Candlepower": 0.0796
     },
+
+    # --- M ---
     "Meters": {
         "Inches": 39.37,
         "Feet": 3.281,
@@ -139,7 +180,7 @@ conversion_map = {
     "Microns": {
         "Inches": 3.937E-5,
         "Meters": 1.0E-6,
-        "Millimeters": 1.0E-3
+        "Millimeters": 0.001
     },
     "Miles": {
         "Kilometers": 1.609,
@@ -148,8 +189,8 @@ conversion_map = {
     },
     "Milliliters": {
         "Cubic centimeters": 1.0,
-        "Liters": 1.0E-3,
-        "Gallons (U.S. liquid)": 2.642E-4
+        "Liters": 0.001,
+        "Gallons (U.S. liquid)": 0.0002642
     },
     "Millimeters": {
         "Inches": 0.03937,
@@ -161,11 +202,23 @@ conversion_map = {
         "Grams": 28.35,
         "Kilograms": 0.02835
     },
+})
+conversion_map.update({
+    # --- N ---
+    "Newton-meters": {
+        "Foot-pounds force": 0.7376,
+        "Joules": 1.0
+    },
+    "Newtons": {
+        "Pounds force": 0.2248,
+        "Dynes": 1.0E5
+    },
+
     # --- P ---
     "Pascals": {
         "Atmospheres": 9.869E-6,
         "Bars": 1.0E-5,
-        "Pounds per square inch": 1.45E-4
+        "Pounds per square inch": 0.000145
     },
     "Pints (U.S. liquid)": {
         "Cubic inches": 28.875,
@@ -197,13 +250,13 @@ conversion_map = {
     },
     "Rankine": {
         "Degrees Fahrenheit": 1.0,
-        "Degrees Celsius": 0.5556  # again, offset ignored in table
+        "Degrees Celsius": 0.5556
     },
 
     # --- S ---
     "Seconds": {
         "Minutes": 0.01667,
-        "Hours": 2.778E-4
+        "Hours": 0.0002778
     },
     "Square feet": {
         "Square meters": 0.0929,
@@ -254,4 +307,4 @@ conversion_map = {
         "Calories": 860.0,
         "Joules": 3600.0
     },
-}
+})
