@@ -3,7 +3,7 @@ from conversions_common import conversion_map
 import pandas as pd
 
 st.set_page_config(page_title="Common Units Converter (Python dict)", layout="centered")
-st.title("Common Units Converter — Python-only version")
+st.title("Units Converter — Perry Handbook")
 
 # Select input unit
 from_unit = st.radio("Select input unit (From):", list(conversion_map.keys()))
@@ -45,3 +45,4 @@ st.download_button("Download conversion table (CSV)",
                    data=get_csv_bytes(),
                    file_name="conversions_common.csv",
                    mime="text/csv")
+
